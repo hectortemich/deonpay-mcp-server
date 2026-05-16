@@ -1,0 +1,14 @@
+src/
+node_modules/
+.eslintrc.json
+.prettierrc
+tsup.config.ts
+tsconfig.json
+*.log
+.env*
+.git/
+.github/
+.vscode/
+.idea/
+coverage/
+*.tsbuildinfo

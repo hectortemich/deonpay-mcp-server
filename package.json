@@ -1,0 +1,69 @@
+{
+  "name": "@deonpay/mcp-server",
+  "version": "0.1.0",
+  "description": "Model Context Protocol server for DeonPay - lets AI assistants like Claude Desktop interact with your payments, links, subscriptions and customers.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "deonpay",
+    "payments",
+    "claude",
+    "anthropic",
+    "ai",
+    "fintech",
+    "mexico"
+  ],
+  "homepage": "https://deonpay.mx",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deonpay/deonpay-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/deonpay/deonpay-mcp-server/issues"
+  },
+  "license": "MIT",
+  "author": "DeonPay",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "deonpay-mcp-server": "./dist/index.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write src",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^25.8.0",
+    "@typescript-eslint/eslint-plugin": "^8.59.3",
+    "@typescript-eslint/parser": "^8.59.3",
+    "eslint": "^8.57.1",
+    "prettier": "^3.8.3",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
