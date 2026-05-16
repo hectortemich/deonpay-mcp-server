@@ -200,7 +200,7 @@ Set `DEONPAY_DEBUG=1` in the `env` block. Every HTTP request and response is the
 ## Development
 
 ```bash
-git clone https://github.com/deonpay/deonpay-mcp-server.git
+git clone https://github.com/hectortemich/deonpay-mcp-server.git
 cd deonpay-mcp-server
 npm install
 npm run build       # tsup -> dist/{index.js,index.cjs,index.d.ts}

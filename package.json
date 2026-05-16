@@ -16,10 +16,10 @@
   "homepage": "https://deonpay.mx",
   "repository": {
     "type": "git",
-    "url": "https://github.com/deonpay/deonpay-mcp-server.git"
+    "url": "https://github.com/hectortemich/deonpay-mcp-server.git"
   },
   "bugs": {
-    "url": "https://github.com/deonpay/deonpay-mcp-server/issues"
+    "url": "https://github.com/hectortemich/deonpay-mcp-server/issues"
   },
   "license": "MIT",
   "author": "DeonPay",
